@@ -15,17 +15,18 @@ router.get('/', (req, res) => {
         ],
       order: [['created_at', 'DESC']],
       include: [
+        // Comment model here -- attached username to comment
         {
           model: Comment,
           attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
           include: {
             model: User,
-            attributes: ['username']
+            attributes: ['username', 'github']
           }
         },
         {
           model: User,
-          attributes: ['username']
+          attributes: ['username','github']
         },
       ]
     })
@@ -48,16 +49,17 @@ router.get('/', (req, res) => {
         'post_content'
       ],
       include: [
+        // include the Comment model here:
         {
           model: User,
-          attributes: ['username']
+          attributes: ['username', 'github']
         },
         {
           model: Comment,
           attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
           include: {
             model: User,
-            attributes: ['username']
+            attributes: ['username', 'github']
           }
         }
       ]
