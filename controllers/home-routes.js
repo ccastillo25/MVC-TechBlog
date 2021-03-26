@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
         attributes: [
             'id',
             'title',
-            'content',
+            'post_content',
             'created_at'
         ],
         include: [{
@@ -55,7 +55,7 @@ Post.findOne({
         },
         attributes: [
             'id',
-            'content',
+            'post_content',
             'title',
             'created_at'
         ],
@@ -80,7 +80,7 @@ Post.findOne({
         }
         const post = dbPostData.get({ plain: true });
         console.log(post);
-        res.render('single-post', { post, loggedIn: req.session.loggedIn });
+        res.render('singlepost', { post, loggedIn: req.session.loggedIn });
 
 
     })
@@ -96,7 +96,7 @@ Post.findOne({
         },
         attributes: [
             'id',
-            'content',
+            'post_content',
             'title',
             'created_at'
         ],
