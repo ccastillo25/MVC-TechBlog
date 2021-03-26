@@ -18,7 +18,7 @@
   }
   
   a:hover {
-    color: #78c4d4;
+    color: #11698e;
   }
   
   button {
@@ -45,7 +45,7 @@
   textarea:focus,
   input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 1px solid #11698e;
   }
   
   textarea {
@@ -89,7 +89,7 @@
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    color: #11698e;
     font-size: 100%;
     font-weight: bold;
     transition: color 0.1s;
@@ -98,7 +98,7 @@
   
   .btn-no-style:hover {
     background: none;
-    color: #3486eb;
+    color: #11698e;
   }
   
   .delete-post-btn {
