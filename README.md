@@ -16,5 +16,7 @@ Technologies Used
 
 Installation and Setup
 Run 'npm i' before install
-Port is set to 3306 on MySQL and 8000 on client side
-Ensure .env file is at root
+Run npm start
+Go to assigned port
+
+@https://github.com/ccastillo25
